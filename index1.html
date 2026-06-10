@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid 2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 0.5fr 2.5fr 0.5fr;
+            grid-gap: 5px;
+        }
+        .navbar{
+            background-color: yellow;
+            grid-row-start: 1;
+            grid-row-end: 101;
+        }
+        nav a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 3px;
+            font-size: larger;
+        }
+        header{
+            background-color: aquamarine;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            padding: 13px;
+        }
+        .article{
+            background-color: yellowgreen;
+            grid-row-start: 2;
+            grid-row-end: 100;
+            padding: 13px;
+        }
+        .sidebar{
+            background-color: lightgreen;
+            grid-row-start: 2;
+            grid-row-end: 100;
+            padding: 13px;
+        }
+        footer{
+            background-color: aqua;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            padding: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Lorem</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </nav>
+        <header><h1>Header</h1></header>
+        <div class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque, itaque in numquam
+            dicta accusantium odio alias temporibus voluptatum quasi commodi natus dolor minima sit, aperiam officiis
+            exercitationem nemo possimus optio fugit fuga amet veniam doloribus at? Debitis sunt molestias libero,
+            assumenda animi quos doloremque voluptatum vero repellat, aspernatur nisi?</div>
+        <div class="sidebar">ADS</div>
+        <footer>
+            &copy; Copyright | Created by Khushi
+        </footer>
+    </div>
+</body>
+
+</html>
